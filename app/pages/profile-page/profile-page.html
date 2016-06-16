@@ -8,9 +8,32 @@
 	<button menuToggle>
     	<ion-icon name="menu"></ion-icon>
   	</button>
-  	<ion-title>profilePage</ion-title>
+  	<ion-title>Profile</ion-title>
 </ion-navbar>
 
 <ion-content padding class="profile-page">
-  
+	<h2>Balance: $300</h2>
+	<h2>Cash Flow: +$500</h2>
+	<h2>Bank Accounts</h2>
+	<ion-card>
+  	<ion-card-header>
+      <ion-item>
+        <h2><ion-icon name="cash"></ion-icon>Bank Account Name</h2> 
+        <button primary clear item-right primary> 
+          <ion-icon (click)="refreshAccnt(a)" name="refresh-circle" item-right></ion-icon> 
+        </button> 
+      </ion-item>
+  	</ion-card-header>
+  	<ion-card-content>
+      <ion-item>
+    		<ion-row>
+      		<ion-col><p>Debit or Credit</p></ion-col>
+      		<ion-col><p>$300</p></ion-col>
+      	</ion-row>
+      </ion-item>
+  	</ion-card-content>
+	</ion-card>
+	<button ion-item (click)="openNewAccnt()">
+		Link Bank Account...
+	</button>
 </ion-content>

@@ -8,8 +8,17 @@ import {NavController} from 'ionic-angular';
   Ionic pages and navigation.
 */
 @Component({
-  templateUrl: 'build/pages/profile-page/profile-page.html',
+  	templateUrl: 'build/pages/profile-page/profile-page.html'
 })
 export class ProfilePage {
-  constructor(public nav: NavController) {}
+	public user: any;
+  	constructor(public nav: NavController) {}
+
+  	openNewAccnt() {
+  		
+  	}
+
+  	refreshAccnt(account) {
+
+  	}
 }

@@ -1,14 +1,11 @@
 <ion-menu [content]="menucontent">
-  <ion-content>
-  	<ion-toolbar>
-      <ion-title>[Name Here]</ion-title>
-    </ion-toolbar>
-    <ion-list>
-      <button ion-item *ngFor="let p of pages" (click)="openPage(p)">
-        {{p.title}}
-      </button>
-    </ion-list>
-  </ion-content>
+    <ion-content>
+        <ion-list>
+            <button ion-item *ngFor="let p of pages" (click)="openPage(p)">
+                {{p.title}}
+            </button>
+        </ion-list>
+    </ion-content>
 </ion-menu>
 
 <ion-nav #menucontent [root]="rootPage"></ion-nav>
